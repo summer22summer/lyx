@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC"-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="">
+<!--加入带日志文件的ehcache缓存  -->
+	<cache type="org.mybatis.caches.ehcache.LoggingEhche">
+	</cache>
+	
+	<!-- 查所有区 -->
+	<select id="findAllDistric" resultType="District">
+		select id,name from district
+	</select>
+	
+	
+
+</mapper>
